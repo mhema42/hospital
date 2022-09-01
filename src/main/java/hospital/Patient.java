@@ -2,30 +2,33 @@ package hospital;
 
 public class Patient {
 
-	public Patient(String string, String string2) {
-		// TODO Auto-generated constructor stub
+	private String name;
+	private String getSickness;
+
+	protected Patient(String name, String getSickness) {
+		this.name = name;
+		this.getSickness = getSickness;
 	}
 
-	public Patient(String string) {
-		// TODO Auto-generated constructor stub
+	protected Patient(String name) {
+		this.name = name;
 	}
 
-	public String getName() {
+	protected String getName() {
+		return name;
+	}
+
+	protected boolean isSick() {
 		// TODO Auto-generated method stub
-		return null;
+		return true;
 	}
 
-	public boolean isSick() {
+	protected String getSickness() {
 		// TODO Auto-generated method stub
-		return false;
+		return getSickness;
 	}
 
-	public String getSickness() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	public void takeMedication(Medicine medicine) {
+	protected void takeMedication(Medicine medicine) {
 		// TODO Auto-generated method stub
 		
 	}
