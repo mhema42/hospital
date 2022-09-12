@@ -35,6 +35,7 @@ public class Patient {
 	
 	protected void takeMedication(Medicine medicine) {
 		if(medicine.getTreatmentName().equals(getSickness)) {
+			getSickness = null;
 			isSick = false;
 		}
 	}
